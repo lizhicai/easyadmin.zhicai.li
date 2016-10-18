@@ -16,6 +16,7 @@
     "tests"
   ],
   "dependencies": {
+    "jquery": "^2.2.4",
     "AdminLTE": "admin-lte#^2.3.2",
     "font-awesome": "^4.5.0",
     "sweetalert": "^1.1.3",

@@ -47,8 +47,8 @@
     </div><!-- ./wrapper -->
 
     <!-- JavaScripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     @yield('before-scripts-end')
+    {!! Html::script('vendor/jquery/jquery.min.js') !!}
     {!! Html::script(elixir('js/dashboard.js')) !!}
     {!! Html::script('vendor/jsvalidation/js/jsvalidation.js') !!}
     @yield('after-scripts-end')

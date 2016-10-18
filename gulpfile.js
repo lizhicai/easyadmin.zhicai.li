@@ -9,12 +9,14 @@ elixir.extend('remove', function(path) {
 
 elixir(function(mix) {
 
-    // Copy fonts 
+    // Copy fonts
     mix.copy('bower_components/AdminLTE/bootstrap/fonts', 'public/build/fonts');
     mix.copy('bower_components/font-awesome/fonts', 'public/build/fonts');
-    // Copy iCheck plugin image 
+    // Copy iCheck plugin image
     mix.copy('bower_components/AdminLTE/plugins/iCheck/square/blue.png', 'public/build/css/blue.png');
     mix.copy('bower_components/AdminLTE/plugins/iCheck/flat/flat.png', 'public/build/css/flat.png');
+
+    mix.copy('bower_components/jquery/dist/jquery.min.js', 'public/vendor/jquery/jquery.min.js');
 
 
     // Merge all dashboard CSS files in one file.
@@ -55,7 +57,7 @@ elixir(function(mix) {
 
 
     mix.copy('resources/assets/flags', 'public/build/flags');
-    
+
     // Merge all frontend CSS files in one file.
     mix.styles([
         './bower_components/bootstrap/dist/css/bootstrap.min.css',
